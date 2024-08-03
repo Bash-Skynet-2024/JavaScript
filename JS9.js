@@ -8,3 +8,9 @@ let data ={
 for (let i in data){
     console.log("marks of "+i+" are "+ data[i]);
 }
+let arr =[ 1,2,3,4,5];
+for(let i of arr){
+    console.log(i);
+}
+// use 'in' for objects
+// use 'of' for array
