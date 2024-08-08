@@ -1,7 +1,10 @@
-//input age - can drive ?
+// input age and check if can drive
 let age = parseInt(prompt("enter age : "));
-if(age > 18){
-    alert("yes u are eligible to drive ");
-} else { 
-    alert(" u cannot drive");
+function candrive( age){
+    return (age >= 18)?true:false ;
+}
+if(candrive(age)){
+    alert("yes u can drive");
+} else{
+    alert("u cannot drive");
 }
