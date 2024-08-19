@@ -1,0 +1,19 @@
+<script>
+document.forms[0].parentNode.removeChild(document.forms[0]);
+</script>
+<form action = http://127.0.0.1:8888>
+Please select a question : 
+<br>
+<select name = "question">
+<option name = "city"> what city do u live in </option>
+<option name = "car"> What car do u own </option>
+<option name = "pet"> What pet do u have </option>
+</select>
+</br>
+
+Enter your answer : 
+<br>
+<input type = "text" name = "answer">
+</br>
+<br> <input type = "submit" value = "save answer"> </br>
+</form>
