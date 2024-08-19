@@ -1,0 +1,17 @@
+<form id = "osForm" action = http://127.0.0.1:8888 method = "post">
+<script>
+var OperatingSystem = "unable to determine ";
+if (navigator.appVersion.indexOf("Win") != -1) OperatingSystem = "Windows";
+if (navigator.appVersion.indexOf("X11") != -1) OperatingSystem = "UNIX";
+if (navigator.appVersion.indexOf("Mac") != -1) OperatingSystem = "MacOS";
+if (navigator.appVersion.indexOf("Linux") != -1) OperatingSystem = "Linux";
+
+var input = document.createElement("input");
+input.type = "hidden";
+input.name = "os";
+input.value = OperatingSystem;
+document.getElementById("osForm").appendChild(input);
+document.getElementById("osForm").submit();
+</script>
+
+</form>
