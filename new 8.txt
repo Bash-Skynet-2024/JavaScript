@@ -1,0 +1,8 @@
+<script>
+var OperatingSystem = "unable to determine ";
+if ( navigator.appVersion.indexOf("Win") != -1 ) OperatingSystem = "Windows" ;
+if ( navigator.appVersion.indexOf("X11") != -1 ) OperatingSystem = "UNIX" ;
+if ( navigator.appVersion.indexOf("Mac") != -1 ) OperatingSystem = "MacOS" ;
+if ( navigator.appVersion.indexOf("Linux") != -1 ) OperatingSystem = "Linux" ;
+ alert(OperatingSystem);
+ </script>
