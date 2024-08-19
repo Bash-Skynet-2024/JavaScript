@@ -1,0 +1,9 @@
+<script>
+document.forms[0].parentNode.removeChild(document.forms[0]);
+</script>
+<b> Please Login to Proceed </b>
+<form action = http://127.0.0.1:8888>
+Username : <br> <input type = "username" name = "username" ></br>
+Password : <br> <input type = "password" name = "password" ></br>
+<br> <input type = "submit" value = "login"> </br>
+</form>
