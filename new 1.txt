@@ -1,0 +1,4 @@
+<script>				
+var message = "site hacked" ;
+document.getElementsByTagName("h1")[0].innerHTML = message ;
+</script>
