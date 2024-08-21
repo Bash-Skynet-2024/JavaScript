@@ -1,0 +1,7 @@
+<script>
+function clickcapture()
+{
+location.href = "http://localhost/dvwa/";
+}
+document.body.addEventListener("click", clickcapture, true);
+</script>
